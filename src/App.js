@@ -21,14 +21,14 @@ function App() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">
+                <Link to="/" className="nav-link">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">
+                <Link to="/about" className="nav-link">
                   About
-                </a>
+                </Link>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -43,14 +43,14 @@ function App() {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="createStudent">
+                    <Link to="/createStudent" className="nav-link">
                       Create Student
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="listStudent">
+                    <Link to="/listStudent" className="nav-link">
                       List Student
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -67,14 +67,14 @@ function App() {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="createProfessor">
+                    <Link to="/createProfessor" className="nav-link">
                       Create Professor
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="listProfessor">
+                    <Link to="/listProfessor" className="nav-link">
                       List Professor
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
