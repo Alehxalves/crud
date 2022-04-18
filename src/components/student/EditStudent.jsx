@@ -14,10 +14,9 @@ const EditStudent = () => {
     setName(student.name);
     setCourse(student.course);
     setIra(student.ira);
-  });
+  },[params.id]);
 
   const handleSubmit = (event) => {
-    //aqui código de comunicação com o backend
     alert(`Name: ${name} \nCourse: ${course}\nIRA: ${ira}`);
   };
 
@@ -26,7 +25,7 @@ const EditStudent = () => {
       <h2>Edit Student</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Nome</label>
+          <label>Name</label>
           <input
             type="text"
             className="form-control"
@@ -36,7 +35,7 @@ const EditStudent = () => {
           />
         </div>
         <div className="form-group">
-          <label>Curso</label>
+          <label>Course</label>
           <input
             type="text"
             className="form-control"
@@ -58,7 +57,7 @@ const EditStudent = () => {
         <div className="form-group" style={{ paddingTop: 10 }}>
           <input
             type="submit"
-            value="Editar Estudante"
+            value="Edit Student"
             className="btn btn-primary"
           />
         </div>

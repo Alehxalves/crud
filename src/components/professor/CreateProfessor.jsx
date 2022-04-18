@@ -6,7 +6,6 @@ const CreateProfessor = () => {
   const [degree, setDegree] = useState("");
 
   const handleSubmit = (event) => {
-    //aqui código de comunicação com o backend
     alert(`Name: ${name} \nUniversity: ${university}\nDegree: ${degree}`);
   };
 

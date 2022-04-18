@@ -6,7 +6,6 @@ const CreateStudent = () => {
   const [ira, setIra] = useState(0);
 
   const handleSubmit = (event) => {
-    //aqui código de comunicação com o backend
     alert(`Nome: ${name} \nCurso: ${course}\nIRA: ${ira}`);
   };
 
